@@ -1,0 +1,21 @@
+{
+  "name": "ramda-memoize",
+  "version": "1.0.0",
+  "description": "Investigating oddity re R.memoize",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jonathan Taylor",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-things": "^0.2.0",
+    "eslint": "^4.6.0",
+    "mocha": "^3.5.0",
+    "ramda": "^0.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taylorjg/RamdaMemoize.git"
+  }
+}
