@@ -28,6 +28,19 @@ describe('R.memoize', () => {
         const xs = [1, 1, 1];
         const ys = xs.map(m);
         expect(ys).to.all.equal(42);
+        expect(count).to.equal(3);
+    });
+
+    it('memoized partially applied curried lambda (3)', () => {
+        let count = 0;
+        const f = a => b => {
+            count++;
+            return a + b;
+        };
+        const m = R.memoizeWith(b => b.toString(), f(41));
+        const xs = [1, 1, 1];
+        const ys = xs.map(m);
+        expect(ys).to.all.equal(42);
         expect(count).to.equal(1);
     });
 });
